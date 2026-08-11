@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms &amp; Conditions | PDF Master Pro</title>
+<meta name="description" content="Terms & Conditions for PDF Master Pro, an Android application for PDF creation, editing, scanning, conversion, compression, merging, splitting, OCR, and related document tools.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Terms & Conditions | PDF Master Pro">
+<meta property="og:description" content="Read the Terms & Conditions governing use of PDF Master Pro, including licensing, prohibited uses, advertising, and disclaimers.">
+<meta property="og:url" content="https://darkking5514-design.github.io/pdf-master-pro/terms.html">
+<link rel="canonical" href="https://darkking5514-design.github.io/pdf-master-pro/terms.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Terms & Conditions | PDF Master Pro">
+<meta name="twitter:description" content="Read the Terms & Conditions governing use of PDF Master Pro, including licensing, prohibited uses, advertising, and disclaimers.">
+
+<style>
+  :root{
+    --bg: #f7f8fb;
+    --surface: #ffffff;
+    --ink: #10192e;
+    --ink-soft: #4b5670;
+    --line: #e6e9f2;
+    --accent: #4b3df6;
+    --accent-2: #7c5cff;
+    --accent-soft: #eef0ff;
+    --radius: 16px;
+    --max: 980px;
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a{ color: var(--accent); text-decoration: none; }
+  a:hover{ text-decoration: underline; }
+  a:focus-visible, button:focus-visible{
+    outline: 3px solid var(--accent-2);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  img,svg{ display:block; max-width:100%; }
+
+  .wrap{ max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  header.site{
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(247,248,251,0.85);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding: 14px 0;
+  }
+  .brand{
+    display:flex; align-items:center; gap:10px;
+    font-weight:800; font-size:18px; color: var(--ink);
+  }
+  .brand-mark{
+    width:34px; height:34px; border-radius:10px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  .nav-links{ display:flex; gap: 26px; align-items:center; }
+  .nav-links a{ color: var(--ink-soft); font-weight:600; font-size:14.5px; }
+  .nav-links a.active{ color: var(--accent); }
+  .nav-toggle{ display:none; background:none; border:none; cursor:pointer; padding:8px; }
+  .nav-toggle span{ display:block; width:22px; height:2px; background:var(--ink); margin:4px 0; border-radius:2px; }
+
+  @media (max-width: 720px){
+    .nav-links{
+      position:absolute; top:100%; left:0; right:0;
+      background: var(--surface);
+      flex-direction:column; align-items:flex-start; gap:0;
+      border-bottom:1px solid var(--line);
+      max-height:0; overflow:hidden;
+      transition: max-height .25s ease;
+    }
+    .nav-links.open{ max-height:260px; }
+    .nav-links a{ width:100%; padding:14px 20px; border-bottom:1px solid var(--line); }
+    .nav-toggle{ display:block; }
+  }
+
+  /* Hero */
+  .hero{
+    padding: 64px 0 40px;
+    background:
+      radial-gradient(600px 260px at 15% -10%, var(--accent-soft), transparent),
+      radial-gradient(500px 220px at 100% 0%, #f1ecff, transparent);
+  }
+  .eyebrow{
+    display:inline-block; font-size:12.5px; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color: var(--accent);
+    background: var(--accent-soft); padding:6px 12px; border-radius:999px;
+    margin-bottom:18px;
+  }
+  .hero h1{
+    font-size: clamp(32px, 5vw, 48px);
+    margin: 0 0 10px;
+    letter-spacing: -0.02em;
+  }
+  .hero p.sub{
+    font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 620px;
+  }
+  .hero .updated{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size: 13.5px; color: var(--ink-soft);
+    background: var(--surface); border:1px solid var(--line);
+    padding: 8px 14px; border-radius: 999px;
+  }
+  .hero .lede{
+    margin-top: 26px; max-width: 760px; color: var(--ink-soft); font-size: 15.5px;
+  }
+
+  /* TOC */
+  .toc{
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin: 30px 0 10px;
+  }
+  .toc h2{ font-size: 15px; text-transform:uppercase; letter-spacing:.05em; color: var(--ink-soft); margin: 0 0 14px; }
+  .toc ol{
+    columns: 2; column-gap: 28px;
+    margin:0; padding-left: 20px; font-size: 14.5px;
+  }
+  .toc li{ break-inside: avoid; margin-bottom: 9px; }
+  .toc a{ color: var(--ink); font-weight:500; }
+  .toc a:hover{ color: var(--accent); }
+  @media (max-width:600px){ .toc ol{ columns:1; } }
+
+  /* Main sections */
+  main{ padding: 20px 0 60px; }
+  .card{
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 30px 30px;
+    margin: 22px 0;
+    scroll-margin-top: 90px;
+  }
+  .card h2{
+    display:flex; align-items:baseline; gap:12px;
+    font-size: 22px; margin: 0 0 14px; letter-spacing:-0.01em;
+  }
+  .card h2 .num{
+    font-size: 14px; font-weight:800; color:#fff;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    min-width: 30px; height:30px; border-radius:8px;
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  .card h3{ font-size: 16.5px; margin: 20px 0 8px; }
+  .card p{ color: var(--ink); margin: 0 0 14px; font-size:15.5px; }
+  .card ul, .card ol.plain{ margin: 0 0 14px; padding-left: 22px; color: var(--ink); font-size:15.5px; }
+  .card li{ margin-bottom: 6px; }
+  .note{
+    background: var(--accent-soft);
+    border: 1px solid #dcd9ff;
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 14.5px;
+    color: #2c2a63;
+    margin: 12px 0;
+  }
+  .badge-list{ display:flex; flex-wrap:wrap; gap:10px; margin: 6px 0 16px; }
+  .badge{
+    font-size:13px; font-weight:600; background:#f2f3fb; color:var(--ink-soft);
+    border:1px solid var(--line); padding:6px 12px; border-radius:999px;
+  }
+  table.contact{ width:100%; border-collapse:collapse; font-size:15px; }
+  table.contact td{ padding:10px 0; border-bottom:1px solid var(--line); vertical-align:top; }
+  table.contact td:first-child{ color: var(--ink-soft); width:180px; font-weight:600; }
+
+  .back-top{ text-align:center; margin: 8px 0 30px; }
+  .back-top a{ font-size:13.5px; color: var(--ink-soft); font-weight:600; }
+
+  /* Footer */
+  footer.site{
+    background: #0e1530;
+    color: #cdd3e6;
+    padding: 46px 0 30px;
+    margin-top: 40px;
+  }
+  footer.site .f-top{
+    display:flex; flex-wrap:wrap; justify-content:space-between; gap:24px;
+    padding-bottom: 26px; border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  footer.site .brand{ color:#fff; }
+  footer.site p.tag{ color:#97a0bd; max-width:340px; font-size:14px; margin-top:8px; }
+  footer.site .f-links{ display:flex; gap: 24px; flex-wrap:wrap; }
+  footer.site .f-links a{ color:#cdd3e6; font-size:14px; font-weight:600; }
+  footer.site .f-links a:hover{ color:#fff; }
+  footer.site .copy{ margin-top: 22px; font-size: 13px; color:#7a8199; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Z" fill="#ffffff" fill-opacity="0.95"/>
+          <path d="M15 2v5h5" stroke="#4b3df6" stroke-width="1.4" fill="none"/>
+          <text x="7" y="17" font-size="7" font-family="Arial, sans-serif" font-weight="700" fill="#4b3df6">PDF</text>
+        </svg>
+      </span>
+      PDF Master Pro
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="https://darkking5514-design.github.io/pdf-master-pro/">Home</a>
+      <a href="https://darkking5514-design.github.io/pdf-master-pro/privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html" class="active" aria-current="page">Terms &amp; Conditions</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Legal &amp; Terms</span>
+    <h1>Terms &amp; Conditions</h1>
+    <p class="sub">The rules that govern your use of PDF Master Pro.</p>
+    <span class="updated">🕒 Last Updated: August 11, 2026</span>
+    <p class="lede">
+      These Terms &amp; Conditions ("Terms") govern your use of PDF Master Pro (the "app"), developed
+      by RH Studio. By downloading, installing, accessing, or using PDF Master Pro, you agree to these
+      Terms. If you do not agree with these Terms, please do not use the app.
+    </p>
+  </div>
+</section>
+
+<div class="wrap">
+  <nav class="toc" aria-label="Table of contents">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#introduction">1. Introduction</a></li>
+      <li><a href="#acceptance">2. Acceptance of Terms</a></li>
+      <li><a href="#eligibility">3. Eligibility</a></li>
+      <li><a href="#license">4. License to Use the App</a></li>
+      <li><a href="#prohibited">5. Prohibited Uses</a></li>
+      <li><a href="#user-content">6. User Content and Ownership</a></li>
+      <li><a href="#local-processing">7. Local Processing</a></li>
+      <li><a href="#ocr-pdf">8. OCR and PDF Processing Disclaimers</a></li>
+      <li><a href="#file-storage">9. File Storage and Backups</a></li>
+      <li><a href="#permissions">10. Permissions</a></li>
+      <li><a href="#advertising">11. Advertising</a></li>
+      <li><a href="#rewarded-ads">12. Rewarded Advertisements and Ad Abuse</a></li>
+      <li><a href="#third-party">13. Third-Party Services and Links</a></li>
+      <li><a href="#ip">14. Intellectual Property</a></li>
+      <li><a href="#feedback">15. Feedback</a></li>
+      <li><a href="#availability">16. Availability and Updates</a></li>
+      <li><a href="#terms-changes">17. Changes to These Terms</a></li>
+      <li><a href="#termination">18. Termination</a></li>
+      <li><a href="#warranties">19. Disclaimer of Warranties</a></li>
+      <li><a href="#liability">20. Limitation of Liability</a></li>
+      <li><a href="#indemnification">21. Indemnification</a></li>
+      <li><a href="#governing-law">22. Governing Law, Severability &amp; General Terms</a></li>
+      <li><a href="#contact">23. Contact Us</a></li>
+    </ol>
+  </nav>
+</div>
+
+<main class="wrap">
+
+  <article class="card" id="introduction">
+    <h2><span class="num">1</span> Introduction</h2>
+    <p>
+      These Terms &amp; Conditions govern your use of PDF Master Pro ("the app", "we", "us"), an
+      Android document utility application developed by RH Studio that helps users merge, split,
+      compress, convert, protect, scan, and extract text from PDF and document files.
+    </p>
+    <p>
+      By downloading, installing, accessing, or using PDF Master Pro, you agree to be bound by these
+      Terms. If you do not agree with these Terms, please do not use the application.
+    </p>
+    <p>
+      These Terms apply to the PDF Master Pro application and its related functionality. They do not
+      constitute a contract for a subscription service, as the app does not currently offer paid
+      subscriptions or in-app purchases.
+    </p>
+  </article>
+
+  <article class="card" id="acceptance">
+    <h2><span class="num">2</span> Acceptance of Terms</h2>
+    <p>
+      Installing the app, opening the app, using any of its features, or continuing to use the app
+      after an update to these Terms constitutes your acceptance of these Terms, to the extent
+      legally applicable.
+    </p>
+    <p>
+      If you do not agree with these Terms, you should stop using the app and uninstall it from your
+      device.
+    </p>
+  </article>
+
+  <article class="card" id="eligibility">
+    <h2><span class="num">3</span> Eligibility</h2>
+    <p>
+      You are responsible for ensuring that your use of PDF Master Pro is lawful in your jurisdiction
+      and that you are legally capable of agreeing to these Terms. If you are a minor, you should use
+      the application with appropriate permission or supervision where required by applicable law.
+    </p>
+  </article>
+
+  <article class="card" id="license">
+    <h2><span class="num">4</span> License to Use the App</h2>
+    <p>
+      Subject to these Terms, RH Studio grants you a limited, non-exclusive, non-transferable,
+      revocable license to use PDF Master Pro for lawful personal or otherwise permitted purposes.
+    </p>
+    <p>
+      This license does not transfer ownership of the application to you. You do not receive any
+      ownership rights in the app's source code, software architecture, user interface design,
+      branding, logos, trademarks, proprietary assets, or application content. The license is subject
+      to, and conditioned on, your compliance with these Terms.
+    </p>
+  </article>
+
+  <article class="card" id="prohibited">
+    <h2><span class="num">5</span> Prohibited Uses</h2>
+    <p>To the extent permitted by applicable law, you must not:</p>
+    <ul>
+      <li>use the application for unlawful purposes;</li>
+      <li>attempt to bypass security mechanisms within the app;</li>
+      <li>reverse engineer, decompile, or disassemble the application where prohibited by law;</li>
+      <li>modify the application without authorization;</li>
+      <li>redistribute unauthorized modified copies of the application;</li>
+      <li>use automated systems to abuse the application;</li>
+      <li>interfere with the application's operation;</li>
+      <li>attempt to gain unauthorized access to systems or services connected to the app;</li>
+      <li>use the application to infringe the intellectual-property rights of others;</li>
+      <li>use the application to facilitate fraud or other unlawful activity;</li>
+      <li>intentionally abuse advertising or reward mechanisms, or manipulate rewarded-ad flows;</li>
+      <li>attempt to obtain rewards without legitimately completing the applicable ad interaction;</li>
+      <li>exploit bugs or vulnerabilities in the application;</li>
+      <li>transmit malware or malicious content through any feature of the app; or</li>
+      <li>use the application to process content that you have no legal right to process.</li>
+    </ul>
+  </article>
+
+  <article class="card" id="user-content">
+    <h2><span class="num">6</span> User Content and Ownership</h2>
+    <p>
+      You retain ownership of your own documents, images, PDFs, scans, and other content that you
+      process using PDF Master Pro. RH Studio does not claim ownership of your content merely because
+      you process it using the app.
+    </p>
+    <p>
+      You are solely responsible for ensuring that you have the necessary rights, permissions,
+      licenses, or legal authority to process the content you use with the app — for example,
+      copyrighted documents, confidential documents, business documents, third-party documents,
+      scanned IDs, contracts, photographs, or educational materials. RH Studio does not review or take
+      ownership of these documents.
+    </p>
+    <h3>Your Responsibility for Content</h3>
+    <p>You are responsible for:</p>
+    <ul>
+      <li>the accuracy and legality of your documents;</li>
+      <li>having the rights necessary to process them;</li>
+      <li>maintaining your own backups;</li>
+      <li>deciding whether a document is safe to modify;</li>
+      <li>checking your final PDF results; and</li>
+      <li>verifying important documents before submission or use elsewhere.</li>
+    </ul>
+    <p>
+      PDF Master Pro is a tool, and does not guarantee that converted or edited documents are legally
+      valid or accurate.
+    </p>
+  </article>
+
+  <article class="card" id="local-processing">
+    <h2><span class="num">7</span> Local Processing</h2>
+    <p>
+      PDF Master Pro currently performs PDF, image, and OCR processing on your device. The app does
+      not currently provide developer-controlled server storage for processed PDF files.
+    </p>
+    <p>
+      We do not guarantee that your data can never leave your device, because third-party operating
+      system behavior, advertising SDKs, device backups, sharing actions, or other platform behavior
+      may be outside our control. If you intentionally share, export, email, upload, or send a file
+      using another application, that transfer is controlled by you and the relevant third-party
+      service, not by RH Studio.
+    </p>
+  </article>
+
+  <article class="card" id="ocr-pdf">
+    <h2><span class="num">8</span> OCR and PDF Processing Disclaimers</h2>
+    <h3>OCR Disclaimer</h3>
+    <p>
+      OCR (text extraction) is provided as a convenience. OCR results may contain spelling errors,
+      missing text, incorrect characters, formatting problems, or other recognition errors. You should
+      verify important OCR output before relying on it. We do not claim that OCR is 100% accurate or
+      that OCR results are legally authoritative. Consistent with the app's current configuration,
+      <strong>OCR / Extract Text does not use the application's rewarded-ad flow</strong>.
+    </p>
+    <h3>PDF Creation and Editing Disclaimer</h3>
+    <p>
+      PDF Master Pro provides tools such as Image to PDF, PDF merging, PDF splitting, PDF compression,
+      scanning, OCR, and PDF protection, among other related PDF utilities currently available in the
+      app. Results can vary depending on your input file, device, Android version, document
+      complexity, available storage, and other processing limitations. You should review important
+      results before relying on them.
+    </p>
+    <h3>Protect PDF Disclaimer</h3>
+    <p>
+      PDF protection features are provided as a convenience. You are responsible for remembering and
+      securely keeping your passwords, and for maintaining your own backups. We do not claim that
+      password protection makes a document impossible to access, and we do not describe our
+      protection as "military-grade" or "100% secure" encryption.
+    </p>
+  </article>
+
+  <article class="card" id="file-storage">
+    <h2><span class="num">9</span> File Storage and Backups</h2>
+    <p>
+      PDF Master Pro does not currently provide developer-controlled server storage for your PDF
+      files. Files you create or export may remain on your device or the storage location you select
+      until you delete them. You are responsible for managing your local files and backups.
+    </p>
+    <p>
+      Uninstalling the application does not necessarily delete files that were exported to
+      user-accessible storage locations. We recommend maintaining backups of important documents, as
+      processing is performed locally and files may be deleted accidentally.
+    </p>
+  </article>
+
+  <article class="card" id="permissions">
+    <h2><span class="num">10</span> Permissions</h2>
+    <p>The permissions requested by the app may depend on the Android version and the specific features you use:</p>
+    <h3>Camera</h3>
+    <p>May be used for document scanning.</p>
+    <h3>Photos / Media</h3>
+    <p>May be used to select images for PDF creation or related functionality.</p>
+    <h3>Files / Storage</h3>
+    <p>May be required to open, save, export, or manage documents, depending on Android version and implementation.</p>
+    <p>The application does not access data unrelated to its functionality, and does not request permissions beyond those described above.</p>
+  </article>
+
+  <article class="card" id="advertising">
+    <h2><span class="num">11</span> Advertising</h2>
+    <p>
+      PDF Master Pro uses <strong>Google AdMob</strong> to display advertisements as part of the app's
+      free experience. Current confirmed ad formats are:
+    </p>
+    <div class="badge-list">
+      <span class="badge">Banner Ads</span>
+      <span class="badge">Native Ads</span>
+      <span class="badge">Rewarded Ads</span>
+    </div>
+    <p>
+      Advertisements are not completely absent from the app, and not every user necessarily sees
+      identical advertisements — ad delivery is managed by Google AdMob, and RH Studio does not
+      control which specific advertisement is shown to any individual user.
+    </p>
+    <p>
+      For information about advertising-related data processing, please see our
+      <a href="https://darkking5514-design.github.io/pdf-master-pro/privacy-policy.html">Privacy Policy</a>.
+    </p>
+  </article>
+
+  <article class="card" id="rewarded-ads">
+    <h2><span class="num">12</span> Rewarded Advertisements and Ad Abuse</h2>
+    <p>
+      Some eligible PDF operations may require you to watch or complete a rewarded advertisement
+      before the applicable PDF or result is generated. This is part of the app's free-use model for
+      eligible operations. Not every feature requires a rewarded advertisement.
+      <strong>OCR / Extract Text does not use the rewarded advertisement flow.</strong>
+    </p>
+    <p>
+      Rewarded-ad availability may depend on ad availability, platform behavior, network connectivity,
+      or other technical factors. We do not promise that a rewarded ad will always be available, and
+      we do not promise a reward if an advertisement is not successfully completed.
+    </p>
+    <h3>Ad Abuse</h3>
+    <p>You must not:</p>
+    <ul>
+      <li>click your own ads intentionally;</li>
+      <li>manipulate ad interactions;</li>
+      <li>use bots or automate rewarded-ad completion;</li>
+      <li>exploit ad SDK behavior;</li>
+      <li>attempt to generate artificial advertising activity; or</li>
+      <li>interfere with AdMob mechanisms.</li>
+    </ul>
+    <p>Suspected abuse may result in feature restrictions, app restrictions, or other appropriate action where permitted.</p>
+  </article>
+
+  <article class="card" id="third-party">
+    <h2><span class="num">13</span> Third-Party Services and Links</h2>
+    <p>
+      The current confirmed third-party advertising service used by PDF Master Pro is
+      <strong><a href="https://admob.google.com/home/" target="_blank" rel="noopener noreferrer">Google AdMob</a></strong>.
+      This service has its own terms and privacy policies, which you should review.
+    </p>
+    <p>
+      The application or your device may allow you to interact with other third-party apps or
+      services when sharing, exporting, opening, or sending files. RH Studio is not responsible for
+      third-party services it does not control, and you should review the terms and privacy policies
+      of any third-party service before using it.
+    </p>
+  </article>
+
+  <article class="card" id="ip">
+    <h2><span class="num">14</span> Intellectual Property</h2>
+    <p>
+      The PDF Master Pro name, RH Studio branding, logo, application UI, software, source code,
+      design, original graphics, text, and trademarks are owned by or licensed to RH Studio or the
+      relevant rights holders, except for third-party materials. You may not copy, reproduce,
+      redistribute, sell, modify, or exploit these proprietary elements except where legally
+      permitted.
+    </p>
+    <p>This section does not affect your ownership of your own documents and content, as described in Section 6.</p>
+  </article>
+
+  <article class="card" id="feedback">
+    <h2><span class="num">15</span> Feedback</h2>
+    <p>
+      If you send suggestions, feedback, or feature requests, RH Studio may use that feedback to
+      improve the application, without being obligated to implement it. This does not affect your
+      ownership of the documents you process using the app.
+    </p>
+  </article>
+
+  <article class="card" id="availability">
+    <h2><span class="num">16</span> Availability and Updates</h2>
+    <p>
+      RH Studio does not guarantee uninterrupted availability, error-free operation, compatibility
+      with every Android device, permanent availability of every feature, or continuous availability
+      of advertisements or rewarded ads. The application may be updated, modified, suspended, or
+      discontinued.
+    </p>
+    <p>
+      The app may receive updates for bug fixes, security, compatibility, performance, new features,
+      UI improvements, or changes required by Android or third-party services. Features may change
+      over time, and we do not promise that every existing feature will remain available forever.
+    </p>
+  </article>
+
+  <article class="card" id="terms-changes">
+    <h2><span class="num">17</span> Changes to These Terms</h2>
+    <p>
+      RH Studio may update these Terms from time to time. The "Last Updated" date at the top of this
+      page identifies the latest revision. Continued use of the app after an update may constitute
+      acceptance of the revised Terms, where legally applicable. For material changes, reasonable
+      notice may be provided where appropriate.
+    </p>
+  </article>
+
+  <article class="card" id="termination">
+    <h2><span class="num">18</span> Termination</h2>
+    <p>
+      You may stop using the app at any time. RH Studio may restrict or discontinue access to the app
+      where necessary, including for violation of these Terms, abuse, unlawful use, security reasons,
+      technical reasons, or discontinuation of the application.
+    </p>
+    <p>
+      RH Studio does not control your Android device; uninstalling the app remains within your control
+      and that of your device.
+    </p>
+  </article>
+
+  <article class="card" id="warranties">
+    <h2><span class="num">19</span> Disclaimer of Warranties</h2>
+    <p>
+      To the maximum extent permitted by applicable law, the application is provided on an
+      "as available" and "as is" basis. We do not claim that all errors will be fixed, that every
+      document will convert perfectly, that OCR is always accurate, that every PDF will open
+      correctly, that files can never be lost, that the app will work on every device, or that
+      advertisements will always be available.
+    </p>
+    <p>Nothing in these Terms excludes or limits rights that cannot legally be excluded or limited under applicable law.</p>
+  </article>
+
+  <article class="card" id="liability">
+    <h2><span class="num">20</span> Limitation of Liability</h2>
+    <p>
+      To the maximum extent permitted by applicable law, RH Studio is not responsible for indirect,
+      incidental, special, consequential, or similar losses arising from your use of, or inability to
+      use, the application — including, for example, loss of data, business interruption, lost
+      profits, reliance on an incorrect OCR result, document corruption, failure to review an exported
+      document, or third-party service failures.
+    </p>
+    <p>We do not attempt to exclude liability that cannot legally be excluded under applicable law.</p>
+  </article>
+
+  <article class="card" id="indemnification">
+    <h2><span class="num">21</span> Indemnification</h2>
+    <p>
+      To the extent permitted by applicable law, you may be responsible for claims arising from your
+      unlawful use of the app, violation of these Terms, infringement of third-party rights, misuse of
+      the application, or content that you process or distribute using the app.
+    </p>
+  </article>
+
+  <article class="card" id="governing-law">
+    <h2><span class="num">22</span> Governing Law, Severability &amp; General Terms</h2>
+    <h3>Governing Law</h3>
+    <p>
+      These Terms shall be interpreted and applied in accordance with applicable law. Where a specific
+      governing law or jurisdiction is required or appropriate, the applicable law will be determined
+      in accordance with the developer's legal requirements and your mandatory rights.
+    </p>
+    <h3>Severability</h3>
+    <p>If any provision of these Terms is found invalid or unenforceable, the remaining provisions will continue in effect to the extent permitted by law.</p>
+    <h3>Entire Agreement</h3>
+    <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and RH Studio regarding your use of the app, to the extent legally appropriate, without overriding any mandatory consumer protections.</p>
+    <h3>No Waiver</h3>
+    <p>Failure to enforce a provision of these Terms does not necessarily mean that the provision is permanently waived.</p>
+    <h3>Assignment</h3>
+    <p>RH Studio may assign or transfer these Terms in connection with a merger, acquisition, or transfer of the application, without materially reducing your rights under these Terms.</p>
+    <div class="note">
+      Laws vary by jurisdiction. This document does not guarantee legal compliance in every country, Google Play approval, AdMob approval, or absolute legal protection. Mandatory consumer rights under applicable law are not excluded.
+    </div>
+  </article>
+
+  <article class="card" id="contact">
+    <h2><span class="num">23</span> Contact Us</h2>
+    <p>If you have questions about these Terms, please contact us:</p>
+    <table class="contact">
+      <tr><td>Developer / Company</td><td>RH Studio</td></tr>
+      <tr><td>Email</td><td><a href="mailto:riderhunter301@gmail.com">riderhunter301@gmail.com</a></td></tr>
+      <tr><td>Website</td><td><a href="https://rhstudio.rf.gd" target="_blank" rel="noopener noreferrer">rhstudio.rf.gd</a></td></tr>
+      <tr><td>Privacy Policy</td><td><a href="https://darkking5514-design.github.io/pdf-master-pro/privacy-policy.html">View Privacy Policy</a></td></tr>
+    </table>
+  </article>
+
+  <div class="back-top"><a href="#introduction">↑ Back to top</a></div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <div class="brand">PDF Master Pro</div>
+        <p class="tag">Powerful PDF tools, designed with privacy in mind.</p>
+      </div>
+      <nav class="f-links">
+        <a href="https://darkking5514-design.github.io/pdf-master-pro/">Home</a>
+        <a href="https://darkking5514-design.github.io/pdf-master-pro/privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </nav>
+    </div>
+    <p class="tag">Privacy email: <a href="mailto:riderhunter301@gmail.com">riderhunter301@gmail.com</a></p>
+    <p class="copy">© 2026 RH Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  if (toggle && links) {
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    links.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
