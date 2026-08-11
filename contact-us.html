@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — PDF Master Pro | RH Studio</title>
+<meta name="description" content="Contact RH Studio for support, bug reports, feature requests, privacy questions and business inquiries regarding the PDF Master Pro Android app.">
+<meta name="keywords" content="RH Studio, PDF Master Pro, contact us, Android app support, bug report, feature request, privacy questions, business inquiries">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#152238">
+<link rel="canonical" href="https://darkking5514-design.github.io/pdf-master-pro/contact-us.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact Us — PDF Master Pro | RH Studio">
+<meta property="og:description" content="Reach RH Studio for technical support, bug reports, feature requests and more regarding the PDF Master Pro Android app.">
+<meta property="og:url" content="https://darkking5514-design.github.io/pdf-master-pro/contact-us.html">
+<meta property="og:site_name" content="RH Studio">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Contact Us — PDF Master Pro | RH Studio">
+<meta name="twitter:description" content="Reach RH Studio for technical support, bug reports, feature requests and more regarding the PDF Master Pro Android app.">
+
+<style>
+  :root{
+    --bg:#F7F8FA;
+    --surface:#FFFFFF;
+    --ink:#14181F;
+    --muted:#5B6472;
+    --primary:#152238;
+    --primary-2:#223458;
+    --accent:#00A79A;
+    --accent-ink:#00695F;
+    --border:#E2E5EA;
+    --radius:14px;
+    --shadow:0 1px 2px rgba(20,24,31,0.04), 0 8px 24px rgba(20,24,31,0.06);
+    --shadow-hover:0 4px 10px rgba(20,24,31,0.06), 0 16px 36px rgba(20,24,31,0.10);
+    --mono: ui-monospace, "SFMono-Regular", "Roboto Mono", Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0D1117;
+      --surface:#151B24;
+      --ink:#E7EAEE;
+      --muted:#94A0B2;
+      --primary:#0B0F16;
+      --primary-2:#1B2534;
+      --accent:#1FD9C6;
+      --accent-ink:#7DF0E4;
+      --border:#26303F;
+      --shadow:0 1px 2px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.35);
+      --shadow-hover:0 4px 10px rgba(0,0,0,0.4), 0 16px 36px rgba(0,0,0,0.4);
+    }
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%;}
+  a{color:var(--accent-ink);}
+  .container{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+  /* Corner-bracket signature element, echoing the document scanner viewfinder */
+  .brackets{position:relative;}
+  .brackets::before,.brackets::after{
+    content:"";
+    position:absolute;
+    width:18px;height:18px;
+    border:2px solid var(--accent);
+    opacity:0;
+    transition:opacity .2s ease, transform .2s ease;
+  }
+  .brackets::before{top:-2px;left:-2px;border-right:none;border-bottom:none;transform:translate(4px,4px);}
+  .brackets::after{bottom:-2px;right:-2px;border-left:none;border-top:none;transform:translate(-4px,-4px);}
+  .brackets:hover::before,.brackets:focus-within::before,
+  .brackets:hover::after,.brackets:focus-within::after{
+    opacity:1;transform:translate(0,0);
+  }
+
+  /* Header */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:var(--primary);
+    color:#fff;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+  }
+  .header-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 24px;max-width:1080px;margin:0 auto;
+    gap:16px;
+  }
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;}
+  .brand-mark{
+    width:34px;height:34px;border-radius:8px;
+    background:linear-gradient(135deg,var(--accent),#0B7A70);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .brand-name{font-weight:700;font-size:1.02rem;letter-spacing:.2px;}
+  .brand-sub{display:block;font-size:.72rem;color:#B7C0D0;font-weight:400;font-family:var(--mono);}
+
+  nav.primary{display:flex;gap:4px;flex-wrap:wrap;}
+  nav.primary a{
+    color:#DDE3EC;text-decoration:none;font-size:.92rem;font-weight:500;
+    padding:8px 12px;border-radius:8px;transition:background .15s ease,color .15s ease;
+  }
+  nav.primary a:hover,nav.primary a:focus-visible{background:rgba(255,255,255,0.08);color:#fff;}
+
+  @media (max-width:720px){
+    .header-inner{flex-direction:column;align-items:flex-start;}
+    nav.primary{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;}
+    nav.primary a{white-space:nowrap;}
+  }
+
+  /* Hero */
+  .hero{
+    background:
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.05) 0 2px, transparent 2px 10px),
+      linear-gradient(180deg,var(--primary) 0%, var(--primary-2) 100%);
+    color:#fff;
+    padding:72px 0 84px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero .container{position:relative;z-index:1;}
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:.78rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent-ink);
+    display:inline-flex;align-items:center;gap:8px;
+    margin-bottom:18px;
+  }
+  .eyebrow svg{width:16px;height:16px;}
+  h1.hero-title{
+    font-size:clamp(2.1rem,5vw,3.4rem);
+    line-height:1.08;
+    margin:0 0 18px;
+    font-weight:800;
+    letter-spacing:-.02em;
+    max-width:16ch;
+  }
+  .hero-lead{
+    font-size:1.08rem;
+    color:#C9D2E0;
+    max-width:56ch;
+    margin:0 0 32px;
+  }
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:13px 22px;border-radius:10px;
+    font-weight:600;font-size:.96rem;
+    text-decoration:none;
+    border:1px solid transparent;
+    cursor:pointer;
+    transition:transform .12s ease, box-shadow .12s ease, background .15s ease;
+  }
+  .btn:active{transform:translateY(1px);}
+  .btn-accent{background:var(--accent);color:#04211D;}
+  .btn-accent:hover{box-shadow:0 8px 20px rgba(0,167,154,0.35);}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,0.28);}
+  .btn-ghost:hover{background:rgba(255,255,255,0.08);}
+
+  /* Sections */
+  main section{padding:64px 0;border-bottom:1px solid var(--border);}
+  main section:last-of-type{border-bottom:none;}
+  .section-head{max-width:64ch;margin-bottom:36px;}
+  .kicker{
+    font-family:var(--mono);font-size:.76rem;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--accent-ink);margin:0 0 10px;
+  }
+  h2{font-size:clamp(1.5rem,3vw,2rem);margin:0 0 12px;letter-spacing:-.01em;}
+  .section-lead{color:var(--muted);font-size:1.02rem;margin:0;}
+
+  /* Cards grid */
+  .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:24px;
+    box-shadow:var(--shadow);
+    transition:box-shadow .18s ease, transform .18s ease;
+  }
+  .card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+  .card-icon{
+    width:42px;height:42px;border-radius:10px;
+    background:linear-gradient(135deg, rgba(0,167,154,.15), rgba(0,167,154,.05));
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:16px;color:var(--accent-ink);
+  }
+  .card-icon svg{width:22px;height:22px;}
+  .card h3{margin:0 0 8px;font-size:1.05rem;}
+  .card p{margin:0;color:var(--muted);font-size:.94rem;}
+  .card ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:.9rem;}
+  .card ul li{margin-bottom:4px;}
+
+  /* Contact detail cards */
+  .contact-grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+  .contact-card{
+    background:var(--surface);border:1px solid var(--border);
+    border-radius:var(--radius);padding:22px;
+    box-shadow:var(--shadow);
+  }
+  .contact-card .label{
+    font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 8px;
+  }
+  .contact-card .value{font-size:1.08rem;font-weight:700;margin:0;word-break:break-word;}
+  .contact-card .value a{color:var(--ink);text-decoration:none;border-bottom:2px solid var(--accent);}
+  .contact-card .value a:hover{color:var(--accent-ink);}
+  .primary-badge{
+    display:inline-block;margin-top:10px;font-size:.76rem;font-family:var(--mono);
+    color:var(--accent-ink);background:rgba(0,167,154,.12);
+    padding:4px 9px;border-radius:20px;
+  }
+
+  /* Response time */
+  .callout{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:28px;box-shadow:var(--shadow);
+    display:flex;gap:20px;align-items:flex-start;
+  }
+  .callout svg{width:28px;height:28px;flex-shrink:0;color:var(--accent-ink);}
+  .callout p{margin:0 0 8px;color:var(--muted);}
+  .callout p:last-child{margin-bottom:0;}
+  .callout strong{color:var(--ink);}
+
+  /* FAQ */
+  details.faq{
+    background:var(--surface);border:1px solid var(--border);border-radius:12px;
+    padding:4px 20px;margin-bottom:12px;box-shadow:var(--shadow);
+  }
+  details.faq summary{
+    cursor:pointer;list-style:none;padding:16px 0;font-weight:600;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+  }
+  details.faq summary::-webkit-details-marker{display:none;}
+  details.faq summary .chev{
+    width:20px;height:20px;flex-shrink:0;color:var(--muted);
+    transition:transform .2s ease;
+  }
+  details.faq[open] summary .chev{transform:rotate(180deg);}
+  details.faq p{margin:0 0 18px;color:var(--muted);}
+  details.faq summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px;}
+
+  /* Guidelines list */
+  .guideline-list{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:8px;box-shadow:var(--shadow);
+  }
+  .guideline-list ol{margin:0;padding:16px 16px 16px 36px;}
+  .guideline-list li{margin-bottom:10px;color:var(--ink);}
+  .guideline-list li:last-child{margin-bottom:0;}
+  .guideline-list li span{color:var(--muted);font-size:.92rem;}
+
+  .notice{
+    border-left:3px solid var(--accent);
+    padding:16px 20px;background:var(--surface);border-radius:0 12px 12px 0;
+    color:var(--muted);font-size:.94rem;
+  }
+  .notice strong{color:var(--ink);}
+
+  /* Footer */
+  footer.site{
+    background:var(--primary);color:#C9D2E0;padding:48px 0 28px;
+  }
+  .footer-grid{
+    display:grid;gap:32px;grid-template-columns:2fr 1fr 1fr;margin-bottom:32px;
+  }
+  @media (max-width:720px){.footer-grid{grid-template-columns:1fr;}}
+  .footer-grid h4{color:#fff;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;margin:0 0 14px;font-family:var(--mono);}
+  .footer-grid ul{list-style:none;margin:0;padding:0;}
+  .footer-grid li{margin-bottom:10px;}
+  .footer-grid a{color:#C9D2E0;text-decoration:none;font-size:.92rem;}
+  .footer-grid a:hover{color:#fff;}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);padding-top:22px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+    font-size:.84rem;color:#8C97AA;
+  }
+
+  /* Back to top */
+  #backToTop{
+    position:fixed;right:20px;bottom:20px;z-index:60;
+    width:46px;height:46px;border-radius:50%;
+    background:var(--accent);color:#04211D;border:none;
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;opacity:0;pointer-events:none;
+    transition:opacity .2s ease, transform .2s ease;
+  }
+  #backToTop.visible{opacity:1;pointer-events:auto;}
+  #backToTop:hover{transform:translateY(-3px);}
+  #backToTop svg{width:20px;height:20px;}
+
+  .skip-link{
+    position:absolute;left:-999px;top:auto;background:#fff;color:#000;
+    padding:10px 16px;border-radius:8px;z-index:100;
+  }
+  .skip-link:focus{left:16px;top:16px;}
+
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+  @media print{
+    header.site,#backToTop,.hero-actions,nav.primary{display:none !important;}
+    .hero{background:none;color:#000;padding:20px 0;}
+    body{background:#fff;color:#000;}
+    .card,.contact-card,.callout,.guideline-list,details.faq{box-shadow:none;border:1px solid #ccc;}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+          <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+          <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+          <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+          <line x1="14" y1="14" x2="21" y2="14"></line>
+          <line x1="14" y1="18" x2="21" y2="18"></line>
+          <line x1="17" y1="14" x2="17" y2="21"></line>
+        </svg>
+      </span>
+      <span>
+        <span class="brand-name">RH Studio</span>
+        <span class="brand-sub">PDF Master Pro</span>
+      </span>
+    </a>
+    <nav class="primary" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#contact-methods">Contact</a>
+      <a href="#support">Support</a>
+      <a href="#faq">FAQ</a>
+      <a href="#guidelines">Guidelines</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="container">
+      <p class="eyebrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M4 4h4v4H4zM16 4h4v4h-4zM4 16h4v4H4zM14 14h2v2h-2zM18 14h2v2h-2zM14 18h2v2h-2zM18 18h2v2h-2z"/>
+        </svg>
+        Contact RH Studio
+      </p>
+      <h1 class="hero-title">Let's help you get the most out of PDF Master Pro</h1>
+      <p class="hero-lead">Whether you've found a bug, have an idea for a feature, or a question about your privacy — this is the place to reach the team behind the app. We read every message.</p>
+      <div class="hero-actions">
+        <a class="btn btn-accent" href="mailto:riderhunter301@gmail.com">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
+          Email Support
+        </a>
+        <a class="btn btn-ghost" href="#faq">Browse FAQ</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">About the developer</p>
+        <h2>About RH Studio</h2>
+        <p class="section-lead">RH Studio is an independent Android development studio based in Pakistan, focused on building modern, secure and reliable applications.</p>
+      </div>
+      <div class="grid">
+        <div class="card brackets">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>
+          </div>
+          <h3>Privacy-first</h3>
+          <p>Every app is built with a strong focus on user privacy and data protection, so you stay in control of your information.</p>
+        </div>
+        <div class="card brackets">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10a6 6 0 10-12 0c0 4-2 5-2 5h16s-2-1-2-5"/><path d="M9 21a3 3 0 006 0"/></svg>
+          </div>
+          <h3>Reliable &amp; offline-ready</h3>
+          <p>Our tools are designed to work smoothly offline whenever possible, so the app stays dependable wherever you are.</p>
+        </div>
+        <div class="card brackets">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg>
+          </div>
+          <h3>Performance-focused</h3>
+          <p>We optimize for speed and a smooth day-to-day experience, without unnecessary clutter or resource drain.</p>
+        </div>
+        <div class="card brackets">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3>Built on your feedback</h3>
+          <p>Every message we receive helps shape future updates. Your feedback directly influences the quality and direction of our apps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reach-us">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Get in touch</p>
+        <h2>What can we help you with?</h2>
+        <p class="section-lead">You're welcome to reach out about any of the following, and anything else on your mind:</p>
+      </div>
+      <div class="grid">
+        <div class="card"><h3>Technical Support</h3><p>Trouble with a feature or the app not behaving as expected.</p></div>
+        <div class="card"><h3>Bug Reports</h3><p>Something isn't working the way it should.</p></div>
+        <div class="card"><h3>Feature Requests</h3><p>An idea that would make the app more useful for you.</p></div>
+        <div class="card"><h3>Privacy Questions</h3><p>How your data is handled within the app.</p></div>
+        <div class="card"><h3>Terms &amp; Conditions</h3><p>Questions about the terms that govern app usage.</p></div>
+        <div class="card"><h3>Business Inquiries</h3><p>Proposals, licensing or collaboration ideas.</p></div>
+        <div class="card"><h3>Partnership Opportunities</h3><p>Ways we might work together.</p></div>
+        <div class="card"><h3>Copyright Questions</h3><p>Concerns related to intellectual property.</p></div>
+        <div class="card"><h3>General Feedback</h3><p>Anything you'd like RH Studio to know.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-methods">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Contact methods</p>
+        <h2>Reach RH Studio directly</h2>
+        <p class="section-lead">Email is the primary and fastest way to reach us. We currently do not offer phone support.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card brackets">
+          <p class="label">Developer</p>
+          <p class="value">RH Studio</p>
+        </div>
+        <div class="contact-card brackets">
+          <p class="label">Email</p>
+          <p class="value"><a href="mailto:riderhunter301@gmail.com">riderhunter301@gmail.com</a></p>
+          <span class="primary-badge">Primary support channel</span>
+        </div>
+        <div class="contact-card brackets">
+          <p class="label">Country</p>
+          <p class="value">Pakistan</p>
+        </div>
+        <div class="contact-card brackets">
+          <p class="label">Application</p>
+          <p class="value">PDF Master Pro</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="support">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Support services</p>
+        <h2>How we can help</h2>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 18v-2M9 9a3 3 0 116 0c0 2-3 2-3 5"/><circle cx="12" cy="12" r="10"/></svg></div>
+          <h3>Technical Support</h3>
+          <p>We're here to help you resolve problems while using PDF Master Pro, from PDF processing issues to app behavior.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h3>Bug Reports</h3>
+          <p>To help us fix issues quickly, please include:</p>
+          <ul>
+            <li>Android version</li>
+            <li>Device model</li>
+            <li>App version</li>
+            <li>Description of the issue</li>
+            <li>Steps to reproduce</li>
+            <li>Screenshots, if applicable</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg></div>
+          <h3>Feature Requests</h3>
+          <p>Have an idea that would make the app better? Suggestions from users are always welcome and genuinely considered.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg></div>
+          <h3>Privacy Questions</h3>
+          <p>You're welcome to contact RH Studio with any privacy-related concerns or questions about how the app handles data.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21v-4a4 4 0 014-4h10a4 4 0 014 4v4"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <h3>Business Inquiries</h3>
+          <p>Businesses and organizations may contact RH Studio to discuss collaboration or partnership opportunities.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <h3>General Feedback</h3>
+          <p>Every piece of feedback helps RH Studio improve future updates of the app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="response-time">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">What to expect</p>
+        <h2>Response time</h2>
+      </div>
+      <div class="callout brackets">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <div>
+          <p><strong>RH Studio aims to respond within 48–72 business hours.</strong></p>
+          <p>Response times may vary depending on weekends, public holidays and current request volume. Thank you for your patience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Frequently asked</p>
+        <h2>FAQ</h2>
+      </div>
+
+      <details class="faq">
+        <summary>How do I report a bug?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <p>Email riderhunter301@gmail.com with your Android version, device model, app version, a description of the issue, steps to reproduce, and screenshots if you have them.</p>
+      </details>
+
+      <details class="faq">
+        <summary>How do I request a new feature?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <p>Send your idea by email. Describe what you'd like the app to do and why it would help you, and the team will review it.</p>
+      </details>
+
+      <details class="faq">
+        <summary>How do I contact support?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <p>Email is the primary and fastest support channel. Reach RH Studio at riderhunter301@gmail.com.</p>
+      </details>
+
+      <details class="faq">
+        <summary>How do I report an incorrect PDF or OCR result?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <p>Email us with your device model, app version, the feature you were using (such as OCR, merge, split, or compress), and, if possible, a screenshot or description of the issue.</p>
+      </details>
+
+      <details class="faq">
+        <summary>How do I request privacy information?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <p>Email riderhunter301@gmail.com with your privacy question and the team will get back to you directly.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Does RH Studio provide phone support?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <p>No. RH Studio currently only offers support by email, which is the most reliable way to reach the team.</p>
+      </details>
+
+      <details class="faq">
+        <summary>How long does it take to receive a response?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <p>RH Studio aims to respond within 48–72 business hours, though this may vary during weekends or holidays.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="guidelines">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Before you write</p>
+        <h2>Support guidelines</h2>
+        <p class="section-lead">Including the following details helps RH Studio resolve your issue faster:</p>
+      </div>
+      <div class="guideline-list">
+        <ol>
+          <li>Device name <span>— e.g. Samsung Galaxy A54</span></li>
+          <li>Android version <span>— e.g. Android 14</span></li>
+          <li>Application version <span>— found in the app's settings screen</span></li>
+          <li>Problem description <span>— what happened, and what you expected instead</span></li>
+          <li>Steps to reproduce <span>— what you did right before the issue occurred</span></li>
+          <li>Screenshots <span>— optional, but very helpful</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy-notice">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Privacy notice</p>
+        <h2>How we use your email</h2>
+      </div>
+      <p class="notice"><strong>Emails sent to RH Studio are used only to respond to your support request.</strong> They are never sold or shared with third parties, except where required by law.</p>
+    </div>
+  </section>
+
+  <section id="disclaimer">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Disclaimer</p>
+        <h2>Scope of support</h2>
+      </div>
+      <p class="notice">RH Studio provides support for its own application only. RH Studio is not responsible for the behavior of third-party apps or services you may use to open, share, or export files from PDF Master Pro.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>RH Studio</h4>
+        <p style="color:#C9D2E0;font-size:.92rem;max-width:40ch;margin:0;">Independent Android development studio building PDF Master Pro, with a focus on privacy, reliability and performance.</p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="#top">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Details</h4>
+        <ul>
+          <li><a href="mailto:riderhunter301@gmail.com">riderhunter301@gmail.com</a></li>
+          <li>Country: Pakistan</li>
+          <li>Version 1.0</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 RH Studio. All Rights Reserved.</span>
+      <span>PDF Master Pro</span>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+  (function(){
+    var btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 400){ btn.classList.add('visible'); }
+      else { btn.classList.remove('visible'); }
+    }, { passive: true });
+    btn.addEventListener('click', function(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
+</script>
+
+</body>
+</html>
